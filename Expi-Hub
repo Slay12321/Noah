@@ -1,0 +1,219 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Expi-Hub | H20 Moon Magic | Noah*#750", "Ocean")
+
+-- Unlocker
+local Main = Window:NewTab("Main")
+local Key = Main:NewSection("Keybinds")
+local cleo = Main:NewSection("Cleo's House")
+local Misc = Window:NewTab("Misc")
+local Misc1 = Misc:NewSection("Misc")
+local Credits = Window:NewTab("Credits")
+
+
+cleo:NewButton("Strike Front Door", "ZAP!", function()
+        print("Lighting Activated, Cooldowns function!")
+        wait(1)
+        print("Lighting on this poosay")
+        wait(0.5)
+        local args = {
+            [1] = "Lightning",
+            [2] = "Strike",
+            [3] = true,
+            [4] = Vector3.new(-617.5, 4.362268924713135, 910.8033447265625),
+            [5] = 8,
+            [6] = 1,
+            [7] = false
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PowerEvent"):FireServer(unpack(args))
+        
+        	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "ExpiHub", -- Required
+		Text = "Striked Front Door",
+		Duration = 0.5
+	})
+end)
+
+
+cleo:NewButton("Strike Side Door", "ZAP!", function()
+    print("Lighting Activated, Cooldowns function!")
+        wait(1)
+        print("Lighting on this poosay")
+    local args ={
+    [1] = "Lightning",
+    [2] = "Strike",
+    [3] = true,
+    [4] = Vector3.new(-582.0810546875, 4.362268924713135, 912.530517578125),
+    [5] = 7,
+    [6] = 1,
+    [7] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PowerEvent"):FireServer(unpack(args))
+
+        game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PowerEvent"):FireServer(unpack(args))
+        
+        	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "ExpiHub", -- Required
+		Text = "Striked Side Door",
+		Duration = 0.5
+	})
+end)
+
+
+cleo:NewButton("Strike Back Door", "ZAP!", function()
+    print("Lighting Activated, Cooldowns function!")
+        wait(1)
+        print("Lighting on this poosay")
+    local args = {
+    [1] = "Lightning",
+    [2] = "Strike",
+    [3] = true,
+    [4] = Vector3.new(-582.6210327148438, 4.362329959869385, 890.0076904296875),
+    [5] = 1,
+    [6] = 1,
+    [7] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PowerEvent"):FireServer(unpack(args))
+
+end)
+
+
+cleo:NewButton("Inf Boil Front Door", "Bubbles..", function()
+    print("Boiling Front Door...")
+    local args = {
+        [1] = "HydroThermo",
+        [2] = "BoilStartTerrain",
+        [3] = Vector3.new(-613.914306640625, 4.887270450592041),
+        [4] = "Terrain"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PowerFunction"):InvokeServer(unpack(args))
+
+end)
+
+
+cleo:NewButton("Inf Boil Side Door", "Bubbles..", function()
+    print("Boiling Side Door..")
+    local args = {
+        [1] = "HydroThermo",
+        [2] = "BoilStartTerrain",
+        [3] = Vector3.new(-582.0810546875, 4.362268924713135, 912.4005737304688),
+        [4] = "Terrain"
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PowerFunction"):InvokeServer(unpack(args))
+    
+            	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "ExpiHub", -- Required
+		Text = "Striked Back Door",
+		Duration = 0.5
+	})
+end)
+
+
+cleo:NewButton("Inf Boil Back Door", "Bubbles", function()
+    print("Boiling Back Door...")
+    
+            	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "ExpiHub", -- Required
+		Text = "Error",
+		Duration = 1
+	})
+end)
+
+
+Misc1:NewButton("Infinite Yield", "SLAY!", function()
+    print("Infinite Yield Runnning")
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "ExpiHub", -- Required
+		Text = "Infinite Yield Loaded",
+		Duration = 0.5
+	})
+end)
+
+
+Misc1:NewButton("Spawn As Eva", "SLAY!", function()
+    print("Playing As Eva!....")
+    local args = {
+        [1] = "Eva",
+        [2] = "Eva1",
+        [3] = "Keyboard/Mouse"
+    }
+    
+    game:GetService("ReplicatedStorage").ChooseMorph:FireServer(unpack(args))
+
+end)
+
+
+Misc1:NewButton("Spawn as outfit 2 eva", "ButtonInfo", function()
+    print("Spawnig as eva...")
+    local args = {
+        [1] = "Eva",
+        [2] = "Eva2",
+        [3] = "Keyboard/Mouse"
+    }
+    
+    game:GetService("ReplicatedStorage").ChooseMorph:FireServer(unpack(args))
+end)
+
+Misc1:NewButton("Spawn As Outfit 3 Eva", "ButtonInfo", function()
+    print("Spawning as eva..")
+    local args = {
+        [1] = "Eva",
+        [2] = "Eva3",
+        [3] = "Keyboard/Mouse"
+    }
+    
+    game:GetService("ReplicatedStorage").ChooseMorph:FireServer(unpack(args))
+end)
+
+Key:NewButton("Pyrokensis (C)", "ButtonInfo", function()
+    print("Rikki Pyro Starting....")
+    wait(1)
+local printfunction = {100,300,400,500,600,700,800,900,100,1231,2,3,6,1000,3,4,5,6,4,3,1,1,1} 
+
+for i, v in pairs(printfunction) do
+    print("Made By Noah")
+    print("Spamming Logs")
+end
+wait(0.2)
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "c" then
+                      local args = {
+    [1] = "Pyrokinesis",
+    [2] = "Person",
+    [3] = "Ignite",
+    [4] = Target
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PowerEvent"):FireServer(unpack(args))
+ end
+end)
+
+    	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "ExpiHub", -- Required
+		Text = "Rikki's Keybind Started!",
+		Duration = 0.5
+	})
+wait(1)
+    	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "ExpiHub", -- Required
+		Text = "Made By Noah*#4750",
+		Duration = 0.5
+	})
+end)
+
+Key:NewButton("Emma Keybind (B)", "ButtonInfo", function()
+    print("Unknown Error")
+    	game:GetService("StarterGui"):SetCore("SendNotification",{
+		Title = "ExpiHub", -- Required
+		Text = "Unknown Error",
+		Duration = 0.5
+	})
+end)
+
+
